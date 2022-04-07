@@ -16,11 +16,7 @@ const addBook = () => {
         .not().isEmpty()
         .isNumeric()
         .isLength({min: 10, max: 10})
-        .withMessage("ISBN zaaval 10 orontoi baih shaardlagatai!"),
-    body("pubdate")
-        .isDate()
-        .isLength({min: 0})
-        .withMessage("Must be date!"),
+        .withMessage("ISBN zaaval 10 orontoi baih shaardlagatai!")
   ];
 };
 
