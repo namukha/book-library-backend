@@ -15,7 +15,7 @@ const addBook = () => {
     body("isbn")
         .not().isEmpty()
         .isNumeric()
-        .isLength(10)
+        .isLength({min: 10, max: 10})
         .withMessage("ISBN zaaval 10 orontoi baih shaardlagatai!"),
     body("pubdate")
         .isDate()
